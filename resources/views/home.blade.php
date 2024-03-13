@@ -4,11 +4,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="image-container">
-                <img src="/images/hero.jpg" alt="" srcset="" width="100%" height="100%">
+                <img src="/images/hero.png" alt="" srcset="" width="100%">
                 <div class="overlay d-flex flex-column justify-content-center align-items-center text-light">
-                    <h2 class="text-center mb-5" style="font-size:3rem;"><Strong>Selamat Datang Di <br> CCTV Host &
+                    <h2 class="text-center mb-5 mt-5" style="font-size:2.5rem;"><Strong>Selamat Datang Di <br> CCTV Host &
                             Computer</Strong></h2>
-                    <a class="cta-hero mt-5" style="font-size: 3rem" href="#about"><strong>Start</strong></a>
+                    <a class="cta-hero mt-5" style="font-size: 2.5rem" href="#about"><strong>Start</strong></a>
                 </div>
             </div>
         </div>

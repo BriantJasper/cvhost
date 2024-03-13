@@ -58,7 +58,6 @@ body {
 
 img {
     width: 100%;
-    border-radius: 15px;
 }
 
 /* Navbar */
@@ -125,17 +124,17 @@ nav {
         0,
         0,
         0,
-        0.4
+        0.7
     ); /* Adjust opacity here (0.5 is 50% opacity) */
 }
 
 /* CTA */
 
 .cta-hero {
-    background-color: #a32b2b; /* Set the background color */
+    background-color: #fc1e1e; /* Set the background color */
     color: #fff; /* Set the text color */
     border: none; /* Remove the border */
-    padding: 10px 80px; /* Adjust padding to your liking */
+    padding: 10px 60px; /* Adjust padding to your liking */
     cursor: pointer; /* Add cursor pointer on hover */
     border-radius: 100px; /* Optionally, add border-radius for rounded corners */
 }
@@ -145,6 +144,10 @@ nav {
 }
 
 /* About Us Section */
+
+.about-section img {
+    border-radius: 15px;
+}
 
 .stripe {
     background-color: #ced4da;
