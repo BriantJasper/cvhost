@@ -29,10 +29,10 @@
                             <a class="nav-link {{ $title == 'About' ? 'active' : '' }}" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ $title == 'Products' ? 'active' : '' }}" href="/products">Products</a>
+                            <a class="nav-link {{ $title == 'Products' ? 'active' : '' }}" href="#">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ $title == 'Pricing' ? 'active' : '' }}" href="/pricing">Pricing</a>
+                            <a class="nav-link {{ $title == 'Pricing' ? 'active' : '' }}" href="#">Pricing</a>
                         </li>
                     </ul>
                 </div>

@@ -8,8 +8,8 @@
     <title>{{ $title }}</title>
 
     {{-- External CSS --}}
-
     <link rel="stylesheet" href="/css/style.css">
+
     {{-- Bootstrap Links --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
     ">
@@ -19,6 +19,8 @@
     {{-- Navbar --}}
     @include('partials.navbar')
 
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/b5572efd23.js" crossorigin="anonymous"></script>
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,26 +34,7 @@
     @include('partials.footer')
 
     {{-- Scroll Navbar BG Color --}}
-    <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            const headerElements = document.querySelectorAll('.header-elements');
-            const navbarNav = document.querySelector('.navbar-nav');
-            if (window.scrollY > 100) {
-                navbar.classList.add('bg-scroll');
-                headerElements.forEach(element => {
-                    element.style.display = 'none';
-                });
-                navbarNav.style.marginTop = '0'; // Adjust margin-top here
-            } else {
-                navbar.classList.remove('bg-scroll');
-                headerElements.forEach(element => {
-                    element.style.display = 'block';
-                });
-                navbarNav.style.marginTop = '-15px'; // Set back to default margin-top value
-            }
-        });
-    </script>
+    <script src="/js/script.js"></script>
     {{-- Bootstrap Popper --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
