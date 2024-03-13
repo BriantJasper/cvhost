@@ -63,7 +63,7 @@ img {
 /* Navbar */
 
 nav {
-    transition: background-color 2s ease;
+    transition: background-color 1s ease;
     font-size: 1rem;
 }
 
@@ -93,7 +93,7 @@ nav {
         51,
         51,
         51,
-        0.9
+        0.95
     ); /* Adjust the last value (0.8) to set the desired transparency */
 }
 
@@ -168,6 +168,22 @@ nav {
 
 /* End Of About Us Section */
 
+/* Products Section */
+.products-section .col-md-3 {
+    margin-bottom: 1rem;
+}
+
+.products-section p {
+    font-weight: bold;
+    color: rgba(20, 149, 255, 0.815);
+    margin-top: -5px;
+}
+
+.product-img {
+    background-color: #e3e3e3;
+}
+/* End of Products Section */
+
 /* Services Section */
 
 .services {
@@ -208,19 +224,6 @@ nav {
     padding-bottom: 5rem;
 }
 
-.popup {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 5px;
-    z-index: 999;
-}
-
-.popup-content {
-    /* Styles for popup content */
-}
 
 /* End of Servies Section */
 

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="image-container">
-                <img src="/images/hero.png" alt="" srcset="" width="100%">
+                <img src="https://i.postimg.cc/Y0N94GxQ/hero.png" alt="" srcset="" width="100%">
                 <div class="overlay d-flex flex-column justify-content-center align-items-center text-light">
                     <h2 class="text-center mb-5 mt-5" style="font-size:2.5rem;"><Strong>Selamat Datang Di <br> CCTV Host &
                             Computer</Strong></h2>
@@ -14,10 +14,9 @@
         </div>
     </div>
 
-
-    <div class="container text-center">
-        {{-- About Us Section --}}
-        <section class="about-section my-section" id="about">
+    {{-- About Us Section --}}
+    <section class="about-section my-section" id="about">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-md-12">
                     <h2><Strong>About Us</Strong></h2>
@@ -40,15 +39,98 @@
                     <img src="https://i.ibb.co/vjLwqD6/a3.jpg" alt="Air Conditioner Exhaust" />
                 </div>
             </div>
-        </section>
-        {{-- End of About Us Section --}}
+        </div>
+    </section>
+    {{-- End of About Us Section --}}
 
-    </div>
+    {{-- Latest Products Section --}}
+    <section class="products-section">
+        <div class="container">
+            <h2 class="text-center"><strong>Latest Products</strong></h2>
+            <div class="stripe mb-2">
+                <div class="div"></div>
+            </div>
+            <p class="text-center text-dark mt-1" style="font-weight: 500;">Our newest and latest up to date products</p>
 
+            {{-- Row --}}
+            <div class="row">
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <div class="product-img">
+                        <img src="/images/product/1.png" alt="" srcset="">
+                    </div>
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+                {{-- Product --}}
+                <div class="col-md-3">
+                    <img src="/images/product/1.png" alt="" srcset="">
+                    <div class="text-container ms-1">
+                        <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                        <p>Rp 815.000,00</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+    {{-- End of Latest Products Section --}}
 
     {{-- Services Section --}}
     <section class="services-section my-section">
-
         <div class="container">
             <h2 class="text-center"><strong>Services</strong></h2>
             <div class="stripe mb-4">
@@ -56,7 +138,6 @@
             </div>
 
             <div class="row justify-content-center">
-
                 <div class="col-md-6">
                     <div class="services">
                         <div class="icon">
@@ -101,7 +182,6 @@
                         <h2>Repair Services</h2>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -155,8 +235,8 @@
                 <div class="question col-md-12 mt-5">
                     <div class="card-header" role="tab" id="headingOne">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
-                            class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core=""
-                            href="#question1" aria-expanded="false">
+                            class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
+                            data-core="" href="#question1" aria-expanded="false">
                             <h4>Apakah Anda menawarkan garansi pada layanan Anda?</h4>
                             <div class="justify-content-end">
                                 <i class="bi bi-chevron-down"></i>

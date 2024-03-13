@@ -3,7 +3,7 @@ window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     const headerElements = document.querySelectorAll(".header-elements");
     const navbarNav = document.querySelector(".navbar-nav");
-    if (window.scrollY > 100) {
+    if (window.scrollY > 0) {
         navbar.classList.add("bg-scroll");
         headerElements.forEach((element) => {
             element.style.display = "none";
