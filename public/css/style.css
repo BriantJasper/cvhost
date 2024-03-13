@@ -224,19 +224,6 @@ nav {
     padding-bottom: 5rem;
 }
 
-.popup {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 5px;
-    z-index: 999;
-}
-
-.popup-content {
-    /* Styles for popup content */
-}
 
 /* End of Servies Section */
 
