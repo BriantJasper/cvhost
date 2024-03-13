@@ -1,0 +1,210 @@
+:root {
+    --red: #fe0000;
+    --dominant-color: #2d7dd2;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+*::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+}
+
+* {
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+/* Animation */
+body {
+    animation: fadeIn 0.5s linear;
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.icon p {
+    display: inline;
+    text-transform: none !important;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar */
+
+nav {
+    transition: background-color 2s ease;
+    font-size: 1rem;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ccc !important;
+}
+
+.nav-link.active {
+    color: #fa0200 !important;
+    font-weight: 600;
+}
+
+.bg-scroll {
+    background-color: rgba(
+        51,
+        51,
+        51,
+        0.9
+    ); /* Adjust the last value (0.8) to set the desired transparency */
+}
+
+/* Hero Section */
+
+/* Hero Image Overlay */
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensures container wraps around image */
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.4
+    ); /* Adjust opacity here (0.5 is 50% opacity) */
+}
+
+/* CTA */
+
+.cta-hero {
+    background-color: #a32b2b; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border: none; /* Remove the border */
+    padding: 10px 80px; /* Adjust padding to your liking */
+    cursor: pointer; /* Add cursor pointer on hover */
+    border-radius: 100px; /* Optionally, add border-radius for rounded corners */
+}
+
+.cta-hero:hover {
+    background-color: #fa0200; /* Change background color on hover */
+}
+
+/* Services Section */
+
+.my-section {
+    margin: 8rem 0;
+}
+
+.card {
+    border-radius: 15px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding-bottom: 1rem;
+}
+
+.services-section {
+    background: color-mix(
+        in srgb,
+        var(--dominant-color, #0f1305) 10%,
+        transparent
+    );
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
+
+.services-section img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.services-section p {
+    font-size: small;
+    font-weight: 600;
+    margin-top: 0.7rem;
+}
+
+.partners-section img {
+    width: 100%;
+}
+
+/* FAQ Section */
+
+.faq-section {
+    background-color: transparent;
+    background: color-mix(
+        in srgb,
+        var(--dominant-color, #0f1305) 10%,
+        transparent
+    );
+}
+
+.faq-section .heading {
+    font-size: 2rem;
+}
+
+.faq-section .question {
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.faq-section .question i {
+    justify-content: end;
+}
+
+.faq-section .question h4 {
+    display: inline;
+    color: black;
+}
