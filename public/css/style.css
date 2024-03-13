@@ -1,5 +1,5 @@
 :root {
-    --red: #fe0000;
+    --red: #fa0200;
     --dominant-color: #2d7dd2;
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -32,6 +32,10 @@ html {
     text-transform: capitalize;
 }
 
+.my-section {
+    margin: 8rem 0;
+}
+
 /* Animation */
 body {
     animation: fadeIn 0.5s linear;
@@ -54,6 +58,7 @@ body {
 
 img {
     width: 100%;
+    border-radius: 15px;
 }
 
 /* Navbar */
@@ -136,46 +141,85 @@ nav {
 }
 
 .cta-hero:hover {
-    background-color: #fa0200; /* Change background color on hover */
+    background-color: var(--red); /* Change background color on hover */
 }
+
+/* About Us Section */
+
+.stripe {
+    background-color: #ced4da;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    margin: 0 auto;
+}
+
+.stripe > div {
+    background-color: var(--red);
+    width: 40%;
+    height: 3px;
+    border-radius: 15px;
+}
+
+/* End Of About Us Section */
 
 /* Services Section */
 
-.my-section {
-    margin: 8rem 0;
+.services {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem 0;
+    margin: 2rem 1rem 1rem 0;
+    border-radius: 15px;
+    overflow: visible;
 }
 
-.card {
-    border-radius: 15px !important;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding-bottom: 1rem;
+.services h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.services .icon {
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    left: -1.8rem;
+}
+
+.services .icon i {
+    font-size: 1.8rem;
 }
 
 .services-section {
-    background: color-mix(
-        in srgb,
-        var(--dominant-color, #0f1305) 10%,
-        transparent
-    );
+    background: #e9ecef;
     padding: 3rem;
     padding-bottom: 5rem;
 }
 
-.services-section img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 999;
 }
 
-.services-section p {
-    font-size: small;
-    font-weight: 600;
-    margin-top: 0.7rem;
+.popup-content {
+    /* Styles for popup content */
 }
 
-.partners-section img {
-    width: 100%;
-}
+/* End of Servies Section */
 
 /* FAQ Section */
 
@@ -186,6 +230,10 @@ nav {
         var(--dominant-color, #0f1305) 10%,
         transparent
     );
+}
+
+.faq-section h4 {
+    font-weight: 500;
 }
 
 .faq-section .heading {
@@ -208,3 +256,4 @@ nav {
     display: inline;
     color: black;
 }
+/* End of FAQ Serction */

@@ -13,24 +13,110 @@
             </div>
         </div>
     </div>
-    <div class="container text-center">
 
+
+    <div class="container text-center">
         {{-- About Us Section --}}
         <section class="about-section my-section" id="about">
             <div class="row">
                 <div class="col-md-12">
                     <h2><Strong>About Us</Strong></h2>
-                    div.
+                    <div class="stripe">
+                        <div class="div"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 my-4">
+                    <h4>Kami adalah perusahaan yang bergerak di bidang CCTV, Komputer dan Elektronik. Kami menyediakan
+                        berbagai jasa. Termasuk instalasi, maintenance dan perbaikan. Kami menyediakan berbagai jasa lengkap
+                        untuk anda atau bisnis anda.</h4>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.ibb.co/VJCTTZB/a1.jpg" alt="Inside of A PC" />
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.ibb.co/7y9x987/a2.jpg" alt="CCTV" />
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.ibb.co/vjLwqD6/a3.jpg" alt="Air Conditioner Exhaust" />
                 </div>
             </div>
         </section>
         {{-- End of About Us Section --}}
 
-        {{-- Partners Section --}}
+    </div>
+
+
+    {{-- Services Section --}}
+    <section class="services-section my-section">
+
+        <div class="container">
+            <h2 class="text-center"><strong>Services</strong></h2>
+            <div class="stripe mb-4">
+                <div class="div"></div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+                    <div class="services">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h2>CCTV Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="services">
+                        <div class="icon">
+                            <i class="bi bi-pc-display"></i>
+                        </div>
+                        <h2>Computer Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="services">
+                        <div class="icon">
+                            <i class="fa-regular fa-snowflake"></i>
+                        </div>
+                        <h2>Air Conditioner Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="services">
+                        <div class="icon">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h2>Installation Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="services">
+                        <div class="icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h2>Repair Services</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    {{-- End of Services Section --}}
+
+    {{-- Partners Section --}}
+    <div class="container text-center">
+
         <section class="partners-section my-section">
             <div class="section mt-5">
                 <h2><strong>Our Partners</strong></h2>
-                <p style="font-weight: 400">Bekerja sama dengan lebih dari 100+ partner</p>
+                <div class="stripe mb-2">
+                    <div class="div"></div>
+                </div>
+                <p style="font-weight: 500">Bekerja sama dengan lebih dari 100+ partner</p>
             </div>
             <div class="row mt-5 mb-3">
                 <div class="col-md-2 align-middle">
@@ -54,61 +140,8 @@
                 </div>
             </div>
         </section>
-        {{-- End Of Partners Section --}}
     </div>
-    </section>
-
-
-    {{-- Services Section --}}
-    <section class="services-section my-section text-center">
-
-        <div class="container">
-            <h2 class="mb-4"><strong>Services</strong></h2>
-            <div class="row">
-
-                <div class="col-md-4">
-                    <div class="card mb-4" style="width: 100%;">
-                        <img src="/images/computer.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Komputer</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-                                facilisis ligula, a volutpat
-                                diam.
-                                Nulla porttitor,</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4" style="width: 100%;">
-                        <img src="/images/computer.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">CCTV</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-                                facilisis ligula, a volutpat
-                                diam.
-                                Nulla porttitor,</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4" style="width: 100%;">
-                        <img src="/images/computer.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Air Conditioner</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-                                facilisis ligula, a volutpat
-                                diam.
-                                Nulla porttitor,</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    {{-- End of Services Section --}}
+    {{-- End Of Partners Section --}}
 
     {{-- FAQ Section --}}
 
@@ -116,26 +149,28 @@
         <div class="container">
             <div class="row my-5 p-5">
                 <div class="header col-md-12 text-center">
-                    <h2 style=""><Strong>FAQ - Your Often Asked Questions <br> Answered</Strong></h2>
+                    <h2><Strong>FAQ - Frequently Asked Questions</Strong></h2>
                 </div>
                 {{-- Question 1 --}}
                 <div class="question col-md-12 mt-5">
                     <div class="card-header" role="tab" id="headingOne">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core=""
-                            href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <h4><Strong>Do you offer warranty on your services?</Strong></h4>
+                            href="#question1" aria-expanded="false">
+                            <h4>Apakah Anda menawarkan garansi pada layanan Anda?</h4>
                             <div class="justify-content-end">
                                 <i class="bi bi-chevron-down"></i>
                             </div>
                         </a>
+
                     </div>
-                    <div id="collapse1" class="panel-collapse noScroll collapse" role="tabpanel"
+                    <div id="question1" class="panel-collapse noScroll collapse" role="tabpanel"
                         aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_0"
                         style="">
                         <div class="panel-body">
                             <p class="mbr-fonts-style panel-text display-7">
-                                Absolutely! We stand by our work with a rock-solid warranty to ensure your peace of mind.
+                                Tentu saja! Kami mendukung pekerjaan kami dengan garansi yang kokoh untuk memastikan
+                                ketenangan pikiran Anda.
                             </p>
                         </div>
                     </div>
@@ -146,20 +181,21 @@
                     <div class="card-header" role="tab" id="headingTwo">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
-                            data-core="" href="#collapse2" aria-expanded="false" aria-controls="collapse1">
-                            <h4><Strong>Can I book a maintenance service online?</Strong></h4>
+                            data-core="" href="#question2" aria-expanded="false">
+                            <h4>Bisakah saya memesan layanan servis secara online?</h4>
                             <div class="justify-content-end">
                                 <i class="bi bi-chevron-down"></i>
                             </div>
                         </a>
                     </div>
-                    <div id="collapse2" class="panel-collapse noScroll collapse" role="tabpanel"
+                    <div id="question2" class="panel-collapse noScroll collapse" role="tabpanel"
                         aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_0"
                         style="">
                         <div class="panel-body">
                             <p class="mbr-fonts-style panel-text display-7">
-                                Of course! Our online booking system is as easy as waving a wand. Just a few clicks and
-                                you're all set!
+                                Tentu saja! Pesan layanan servis Anda secara online sekarang. Hemat waktu dan tenaga dengan
+                                proses pemesanan yang cepat dan mudah. Percayakan kebutuhan servis Anda kepada kami dan
+                                nikmati kenyamanan memesan secara online!
                             </p>
                         </div>
                     </div>
@@ -170,20 +206,21 @@
                     <div class="card-header" role="tab" id="headingOne">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
-                            data-core="" href="#collapse3" aria-expanded="false" aria-controls="collapse1">
-                            <h4><Strong>Do you provide installation services too?</Strong></h4>
+                            data-core="" href="#question3" aria-expanded="false">
+                            <h4>Apakah Anda menyediakan layanan instalasi juga?</h4>
                             <div class="justify-content-end">
                                 <i class="bi bi-chevron-down"></i>
                             </div>
                         </a>
                     </div>
-                    <div id="collapse3" class="panel-collapse noScroll collapse" role="tabpanel"
+                    <div id="question3" class="panel-collapse noScroll collapse" role="tabpanel"
                         aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_0"
                         style="">
                         <div class="panel-body">
                             <p class="mbr-fonts-style panel-text display-7">
-                                Indeed! Our installation experts will have your new tech set up and running smoothly in a
-                                flash.
+                                Tentu! Kami menyediakan layanan instalasi profesional untuk memastikan penggunaan produk
+                                kami dengan sempurna di lingkungan Anda. Dengan tim ahli kami, Anda dapat yakin setiap
+                                langkah dilakukan dengan sempurna. Hubungi kami sekarang untuk detail lebih lanjut!
                             </p>
                         </div>
                     </div>

@@ -17,7 +17,9 @@
                         <h6 class="text-uppercase fw-bold">CV. HOST</h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <img src="/images/logo.png" alt="CV. HOST Logo" class="mt-4">
+                        <a href="/">
+                            <img src="/images/logo.png" alt="CV. HOST Logo" class="mt-4">
+                        </a>
                     </div>
                     <!-- End of Logo and Name -->
 
