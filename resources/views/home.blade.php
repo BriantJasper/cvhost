@@ -56,9 +56,7 @@
             <div class="row">
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <div class="product-img">
-                        <img src="/images/product/1.png" alt="" srcset="">
-                    </div>
+                    <img src="/images/products/1.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -66,7 +64,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/2.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -74,7 +72,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/3.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -82,7 +80,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/4.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -90,7 +88,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/5.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -98,7 +96,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/6.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -106,7 +104,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/7.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -114,7 +112,7 @@
                 </div>
                 {{-- Product --}}
                 <div class="col-md-3">
-                    <img src="/images/product/1.png" alt="" srcset="">
+                    <img src="/images/products/8.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
                         <p>Rp 815.000,00</p>
@@ -122,12 +120,58 @@
                 </div>
 
             </div>
-
-
-
         </div>
     </section>
     {{-- End of Latest Products Section --}}
+
+    {{-- Product Showcase Section --}}
+    <section class="product-showcase my-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 align-self-center">
+                    <img src="/images/products/showcase.png" alt="HikVision CCTV">
+                </div>
+                <div class="col-md-8 p-4 ps-5">
+                    <div class="heading">
+                        <h2><strong>The World Through Better Lens for Better View</strong></h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="icon mt-4">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <h4 class="mt-3" style="font-weight: 400"><Strong>Burglar & Intrusion</Strong></h4>
+                            <p>Protect your employees, customers and assets with an smart alarm.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="icon mt-4">
+                                <i class="bi bi-camera-video"></i>
+                            </div>
+                            <h4 class="mt-3" style="font-weight: 400"><Strong>Video Surveillance</Strong></h4>
+                            <p>24 hour inside and outside the premises provided with video surveillance.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="icon mt-2">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <h4 class="mt-3" style="font-weight: 400"><Strong>Crystal clear imaging</Strong></h4>
+                            <p>Boasting a 2 MP resolution at 1920x1080, ensuring high-quality visuals for every frame.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="icon mt-2">
+                                <i class="bi bi-moon-stars"></i>
+                            </div>
+                            <h4 class="mt-3" style="font-weight: 400"><Strong>Enhanced night vision</Strong></h4>
+                            <p>With up to 20 m IR distance and 20 m white light distance, capture bright and detailed images
+                                even in low-light conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- End of Product Showcase Section --}}
 
     {{-- Services Section --}}
     <section class="services-section my-section">
