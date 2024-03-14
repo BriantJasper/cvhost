@@ -29,13 +29,13 @@
                         berbagai jasa. Termasuk instalasi, maintenance dan perbaikan. Kami menyediakan berbagai jasa lengkap
                         untuk anda atau bisnis anda.</h4>
                 </div>
-                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="https://i.ibb.co/VJCTTZB/a1.jpg" alt="Inside of A PC" />
                 </div>
-                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="https://i.ibb.co/7y9x987/a2.jpg" alt="CCTV" />
                 </div>
-                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="https://i.ibb.co/vjLwqD6/a3.jpg" alt="Air Conditioner Exhaust" />
                 </div>
             </div>
