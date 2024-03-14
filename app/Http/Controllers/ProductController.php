@@ -15,7 +15,8 @@ class ProductController extends Controller
     {
         return view('products', [
             'title' => 'Products',
-            'products' => Product::all()
+            'products' => Product::all(),
+            'currentPage' => 'products'
         ]);
     }
 

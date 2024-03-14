@@ -1,5 +1,5 @@
 <div class="navbar-container text-light">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container">
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,8 @@
 
                 <div class="col-md-6 text-center">
                     <h5 class="header-elements" style="font-weight: 600">CV.HOST</h5>
-                    <p class="header-elements" style="font-weight: 200; font-size:0.85rem;">Jalan Sei. Raya Dalam, Ruko
+                    <p class="header-elements" style="font-weight: 200; font-size:0.85rem;">Jalan Sei. Raya Dalam,
+                        Ruko
                         Kompleks Bumi Serdam
                         Damai No.1</p>
                     <ul class="navbar-nav justify-content-center" style="margin-top: -15px">
@@ -29,7 +30,7 @@
                             <a class="nav-link {{ $title == 'About' ? 'active' : '' }}" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ $title == 'Products' ? 'active' : '' }}" href="#">Products</a>
+                            <a class="nav-link {{ $title == 'Products' ? 'active' : '' }}" href="/products">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ $title == 'Pricing' ? 'active' : '' }}" href="#">Pricing</a>

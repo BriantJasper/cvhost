@@ -17,7 +17,6 @@
     {{-- Bootstrap Icons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     {{-- Navbar --}}
-    @include('partials.navbar')
 
     {{-- Font Awesome --}}
     <script src="https://kit.fontawesome.com/b5572efd23.js" crossorigin="anonymous"></script>
@@ -29,9 +28,17 @@
 
     {{-- AOS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
+    @if ($currentPage === 'home')
+        @include('partials.navbar_home')
+    @elseif($currentPage === 'products')
+        @include('partials.navbar_products')
+    @endif
+
     @yield('container')
 
     @include('partials.footer')
