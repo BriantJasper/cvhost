@@ -52,7 +52,7 @@
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p><i class="bi bi-house-door-fill"></i> Jalan Sei. Raya Dalam, Ruko Kompleks Bumi Serdam Damai
                             No. 1</p>
-                        <p>
+                        <p style="text-transform:none !important;">
                             <i class="bi bi-envelope-fill"></i> hostcomcctv@yahoo.com
                         </p>
                         <p><i class="bi bi-telephone-fill"></i> 0561 - 712987</p>

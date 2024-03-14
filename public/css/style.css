@@ -99,7 +99,7 @@ nav {
 
 /* Hero Section */
 
-/* Hero Image Overlay */
+
 .image-container {
     position: relative;
     display: inline-block; /* Ensures container wraps around image */
@@ -128,7 +128,6 @@ nav {
     ); /* Adjust opacity here (0.5 is 50% opacity) */
 }
 
-/* CTA */
 
 .cta-hero {
     background-color: #fc1e1e; /* Set the background color */

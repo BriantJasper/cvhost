@@ -18,24 +18,24 @@
     <section class="about-section my-section" id="about">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-up">
                     <h2><Strong>About Us</Strong></h2>
                     <div class="stripe">
                         <div class="div"></div>
                     </div>
                 </div>
-                <div class="col-md-12 my-4">
+                <div class="col-md-12 my-4" data-aos="fade-down">
                     <h4>Kami adalah perusahaan yang bergerak di bidang CCTV, Komputer dan Elektronik. Kami menyediakan
                         berbagai jasa. Termasuk instalasi, maintenance dan perbaikan. Kami menyediakan berbagai jasa lengkap
                         untuk anda atau bisnis anda.</h4>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="https://i.ibb.co/VJCTTZB/a1.jpg" alt="Inside of A PC" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="https://i.ibb.co/7y9x987/a2.jpg" alt="CCTV" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="https://i.ibb.co/vjLwqD6/a3.jpg" alt="Air Conditioner Exhaust" />
                 </div>
             </div>
@@ -46,16 +46,18 @@
     {{-- Latest Products Section --}}
     <section class="products-section">
         <div class="container">
-            <h2 class="text-center"><strong>Latest Products</strong></h2>
-            <div class="stripe mb-2">
-                <div class="div"></div>
+            <div class="div" data-aos="fade-up">
+                <h2 class="text-center"><strong>Latest Products</strong></h2>
+                <div class="stripe mb-2">
+                    <div class="div"></div>
+                </div>
+                <p class="text-center text-dark mt-1" style="font-weight: 500;">Our newest and latest up to date products
+                </p>
             </div>
-            <p class="text-center text-dark mt-1" style="font-weight: 500;">Our newest and latest up to date products</p>
-
             {{-- Row --}}
             <div class="row">
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/1.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -63,7 +65,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/2.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -71,7 +73,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/3.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -79,7 +81,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/4.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -87,7 +89,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/5.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -95,7 +97,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/6.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -103,7 +105,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/7.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -111,7 +113,7 @@
                     </div>
                 </div>
                 {{-- Product --}}
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="zoom-in">
                     <img src="/images/products/8.png" alt="" srcset="">
                     <div class="text-container ms-1">
                         <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
@@ -128,37 +130,41 @@
     <section class="product-showcase my-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 align-self-center">
+                <div class="col-md-4 align-self-center" data-aos="fade-up">
                     <img src="/images/products/showcase.png" alt="HikVision CCTV">
                 </div>
                 <div class="col-md-8 p-4 ps-5">
-                    <div class="heading">
+                    <div class="heading" data-aos="fade-up">
                         <h2><strong>The World Through Better Lens for Better View</strong></h2>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             <div class="icon mt-4">
                                 <i class="bi bi-shield-lock"></i>
                             </div>
                             <h4 class="mt-3" style="font-weight: 400"><Strong>Burglar & Intrusion</Strong></h4>
                             <p>Protect your employees, customers and assets with an smart alarm.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             <div class="icon mt-4">
                                 <i class="bi bi-camera-video"></i>
                             </div>
                             <h4 class="mt-3" style="font-weight: 400"><Strong>Video Surveillance</Strong></h4>
                             <p>24 hour inside and outside the premises provided with video surveillance.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             <div class="icon mt-2">
                                 <i class="bi bi-eye"></i>
                             </div>
                             <h4 class="mt-3" style="font-weight: 400"><Strong>Crystal clear imaging</Strong></h4>
                             <p>Boasting a 2 MP resolution at 1920x1080, ensuring high-quality visuals for every frame.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             <div class="icon mt-2">
                                 <i class="bi bi-moon-stars"></i>
                             </div>
@@ -176,14 +182,16 @@
     {{-- Services Section --}}
     <section class="services-section my-section">
         <div class="container">
-            <h2 class="text-center"><strong>Services</strong></h2>
-            <div class="stripe mb-4">
-                <div class="div"></div>
+            <div data-aos="fade-up">
+                <h2 class="text-center"><strong>Services</strong></h2>
+                <div class="stripe mb-4">
+                    <div class="div"></div>
+                </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in">
                         <div class="icon">
                             <i class="fas fa-video"></i>
                         </div>
@@ -192,7 +200,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in">
                         <div class="icon">
                             <i class="bi bi-pc-display"></i>
                         </div>
@@ -201,7 +209,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in">
                         <div class="icon">
                             <i class="fa-regular fa-snowflake"></i>
                         </div>
@@ -210,7 +218,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in">
                         <div class="icon">
                             <i class="fa-solid fa-hammer"></i>
                         </div>
@@ -219,7 +227,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="services">
+                    <div class="services" data-aos="zoom-in">
                         <div class="icon">
                             <i class="fa-solid fa-wrench"></i>
                         </div>
@@ -235,32 +243,32 @@
     <div class="container text-center">
 
         <section class="partners-section my-section">
-            <div class="section mt-5">
+            <div class="section mt-5" data-aos="fade-up">
                 <h2><strong>Our Partners</strong></h2>
                 <div class="stripe mb-2">
                     <div class="div"></div>
                 </div>
                 <p style="font-weight: 500">Bekerja sama dengan lebih dari 100+ partner</p>
             </div>
-            <div class="row mt-5 mb-3">
+            <div class="row mt-5 mb-3" data-aos="fade-right" data-aos-duration="900">
                 <div class="col-md-2 align-middle">
-                    <img src="https://i.ibb.co/yXB5yk3/hikvision-logo.png" alt="asus-logo" width="100%">
+                    <img src="https://i.ibb.co/yXB5yk3/hikvision-logo.png" alt="HikVision Logo">
                 </div>
                 <div class="col-md-2">
-                    <img src="https://i.ibb.co/wzhDwW3/dahua-logo.png" alt="">
+                    <img src="https://i.ibb.co/wzhDwW3/dahua-logo.png" alt="Dahua Logo">
                 </div>
 
                 <div class="col-md-2">
-                    <img src="https://i.ibb.co/JRjC3qZ/ezviz-logo.png" alt="">
+                    <img src="https://i.ibb.co/JRjC3qZ/ezviz-logo.png" alt="EzViz Logo">
                 </div>
                 <div class="col-md-2">
-                    <img src="https://i.ibb.co/HgTD9Bn/asus-logo.png" alt="">
+                    <img src="https://i.ibb.co/HgTD9Bn/asus-logo.png" alt="Asus Logo">
                 </div>
                 <div class="col-md-2">
-                    <img src="https://i.ibb.co/TkpNVW7/epson-logo.png" alt="">
+                    <img src="https://i.ibb.co/TkpNVW7/epson-logo.png" alt="Epson Logo">
                 </div>
                 <div class="col-md-2">
-                    <img src="https://i.ibb.co/MG7V23Y/solution-logo.png" alt="">
+                    <img src="https://i.ibb.co/MG7V23Y/solution-logo.png" alt="Solution Logo">
                 </div>
             </div>
         </section>
@@ -272,11 +280,11 @@
     <section class="faq-section my-section">
         <div class="container">
             <div class="row my-5 p-5">
-                <div class="header col-md-12 text-center">
+                <div class="header col-md-12 text-center" data-aos="fade-up">
                     <h2><Strong>FAQ - Frequently Asked Questions</Strong></h2>
                 </div>
                 {{-- Question 1 --}}
-                <div class="question col-md-12 mt-5">
+                <div class="question col-md-12 mt-5" data-aos="fade-up">
                     <div class="card-header" role="tab" id="headingOne">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
@@ -301,7 +309,7 @@
                 </div>
 
                 {{-- Question 2 --}}
-                <div class="question col-md-12">
+                <div class="question col-md-12" data-aos="fade-up">
                     <div class="card-header" role="tab" id="headingTwo">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
@@ -326,7 +334,7 @@
                 </div>
 
                 {{-- Question 3 --}}
-                <div class="question col-md-12">
+                <div class="question col-md-12" data-aos="fade-up">
                     <div class="card-header" role="tab" id="headingOne">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"

@@ -1,4 +1,6 @@
+AOS.init();
 // Scroll Navbar Change
+
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     const headerElements = document.querySelectorAll(".header-elements");
