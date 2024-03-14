@@ -68,7 +68,7 @@ html {
 
 /* End of Webkits */
 .my-section {
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
 
 /* Animation */
@@ -314,6 +314,11 @@ nav {
 
 .products {
     margin-top: 8rem;
+}
+
+.carousel {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
 }
 
 .carousel img {
