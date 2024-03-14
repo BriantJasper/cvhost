@@ -184,6 +184,21 @@ nav {
 }
 /* End of Products Section */
 
+/* Product Showcase Section */
+.product-showcase .icon {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 2.5rem;
+    color: #2d7dd2;
+}
+/* Product Showcase Section */
+
 /* Services Section */
 
 .services {
@@ -223,7 +238,6 @@ nav {
     padding: 3rem;
     padding-bottom: 5rem;
 }
-
 
 /* End of Servies Section */
 
