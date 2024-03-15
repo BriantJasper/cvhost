@@ -38,7 +38,33 @@
             </button>
         </div>
 
-        <section class="products-section my-section">
+        {{-- Category Section --}}
+        <section class="category-section my-5 d-none d-md-block d-lg-block">
+            <div class="row justify-content-center">
+                <div class="col-md-12 mb-3">
+                    <h3 class="text-center" style="font-weight: 600;">Kategori</h3>
+                </div>
+                <div class="category">
+                    <img src="/images/category/kamera_cctv.png" width="100%">
+                </div>
+                <div class="category">
+                    <img src="/images/category/kamera_cctv.png" width="100%">
+                </div>
+                <div class="category">
+                    <img src="/images/category/kamera_cctv.png" width="100%">
+                </div>
+                <div class="category">
+                    <img src="/images/category/kamera_cctv.png" width="100%">
+                </div>
+                <div class="category">
+                    <img src="/images/category/kamera_cctv.png" width="100%">
+                </div>
+            </div>
+        </section>
+        {{-- End of Category Section --}}
+
+        {{-- Latest Products --}}
+        <section class="products-section mt-5">
             <div class="container">
                 <div class="div" data-aos="fade-up">
                     <h2 class="text-center"><strong>Latest Products</strong></h2>
@@ -59,8 +85,89 @@
                             <p>Rp 815.000,00</p>
                         </div>
                     </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/2.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/3.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/4.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/5.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/6.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/7.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/8.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+        {{-- End of Latest Products --}}
+
+        {{-- Products Lists --}}
+
+        <section class="products-lists ">
+            <div class="heading">
+                <h2 class="text-center"><strong>Products</strong></h2>
+                <div class="stripe mb-2">
+                    <div class="div"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                @foreach ($products as $product)
+                    <div class="col-md-3" data-aos="zoom-in">
+                        <img src="/images/products/1.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>{{ $product->name }}</strong></h5>
+                            <p>Rp {{ number_format($product->price) }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+
     </div>
 @endsection

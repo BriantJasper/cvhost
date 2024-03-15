@@ -1,10 +1,11 @@
 @extends('partials.main')
 
 @section('container')
+    {{-- Hero --}}
     <div class="row">
         <div class="col-md-12">
             <div class="image-container">
-                <img src="https://i.postimg.cc/Y0N94GxQ/hero.png" alt="" srcset="" width="100%">
+                <img src="/images/hero.png" alt="" srcset="" width="100%">
                 <div class="overlay d-flex flex-column justify-content-center align-items-center text-light">
                     <h2 class="text-center mb-5 mt-5" style="font-size:2.5rem;"><Strong>Selamat Datang Di <br> CCTV Host &
                             Computer</Strong></h2>
@@ -13,6 +14,7 @@
             </div>
         </div>
     </div>
+    {{-- End of Hero --}}
 
     {{-- About Us Section --}}
     <section class="about-section my-section" id="about">
@@ -24,7 +26,7 @@
                         <div class="div"></div>
                     </div>
                 </div>
-                <div class="col-md-12 my-4" data-aos="fade-down">
+                <div class="col-md-12 my-4" data-aos="fade-up">
                     <h4>Kami adalah perusahaan yang bergerak di bidang CCTV, Komputer dan Elektronik. Kami menyediakan
                         berbagai jasa. Termasuk instalasi, maintenance dan perbaikan. Kami menyediakan berbagai jasa lengkap
                         untuk anda atau bisnis anda.</h4>
@@ -276,7 +278,6 @@
     {{-- End Of Partners Section --}}
 
     {{-- FAQ Section --}}
-
     <section class="faq-section my-section">
         <div class="container">
             <div class="row my-5 p-5">

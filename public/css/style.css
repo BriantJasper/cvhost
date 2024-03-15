@@ -222,8 +222,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     border-radius: 50%;
     position: relative;
     font-size: 2.5rem;
@@ -404,4 +404,29 @@ nav {
 .carousel:not(:hover) .carousel-control-next {
     animation: none;
     transform: translateX(-100%);
+}
+
+/* Products Lists */
+
+.category-section {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.category-section .category {
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+
+.category-section .category img {
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.products-lists p {
+    font-weight: bold;
+    color: rgba(20, 149, 255, 0.815);
+    margin-top: -5px;
 }
