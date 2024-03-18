@@ -25,11 +25,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
     {{-- AOS --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
+    {{-- Owl Carousel --}}
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -41,14 +41,27 @@
 
     @yield('container')
 
+    <button id="scrollToTopBtn" title="Go to top" class="text-center"><i class="fa-solid fa-chevron-up"></i></button>
     @include('partials.footer')
 
+    {{-- Jquery --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {{-- AOS JS --}}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    {{-- Scroll Navbar BG Color --}}
-    <script src="/js/script.js"></script>
     {{-- Bootstrap Popper --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- Owl Carousel --}}
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    {{-- External CSS --}}
+    <script src="/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

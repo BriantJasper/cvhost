@@ -39,25 +39,22 @@
         </div>
 
         {{-- Category Section --}}
-        <section class="category-section my-5 d-none d-md-block d-lg-block">
-            <div class="row justify-content-center">
+        <section class="category-section my-5">
+            <div class="row">
                 <div class="col-md-12 mb-3">
-                    <h3 class="text-center" style="font-weight: 600;">Kategori</h3>
+                    <h3 class="text-center" style="font-weight: 600;" style="display:inline-block;">Kategori </h3>
+                    <a href="/products/categories" class="text-decoration-none w-100 d-flex justify-content-end">See More <i
+                            class="bi bi-arrow-right"></i></a>
                 </div>
-                <div class="category">
-                    <img src="/images/category/kamera_cctv.png" width="100%">
-                </div>
-                <div class="category">
-                    <img src="/images/category/kamera_cctv.png" width="100%">
-                </div>
-                <div class="category">
-                    <img src="/images/category/kamera_cctv.png" width="100%">
-                </div>
-                <div class="category">
-                    <img src="/images/category/kamera_cctv.png" width="100%">
-                </div>
-                <div class="category">
-                    <img src="/images/category/kamera_cctv.png" width="100%">
+                <div class="owl-carousel">
+                    @foreach ($categories as $category)
+                        <a href="{{ $category->slug }}">
+                            <div class="category">
+                                <img src="{{ $category->image }}" style="width: 10rem">
+                            </div>
+                        </a>
+                    @endforeach
+
                 </div>
             </div>
         </section>
@@ -155,17 +152,29 @@
                 <div class="stripe mb-2">
                     <div class="div"></div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                @foreach ($products as $product)
-                    <div class="col-md-3" data-aos="zoom-in">
-                        <img src="/images/products/1.png" alt="" srcset="">
-                        <div class="text-container ms-1">
-                            <h5 class="mt-2"><strong>{{ $product->name }}</strong></h5>
-                            <p>Rp {{ number_format($product->price) }}</p>
-                        </div>
+
+                <div class="category-filter">
+                    <div class="buttons">
+                        <button type="button" data-btn="all">All</button>
+                        @foreach ($categories as $category)
+                            <button type="button" data-btn="{{ $category->id }}">{{ $category->name }}</button>
+                        @endforeach
+
                     </div>
-                @endforeach
+                </div>
+            </div>
+            <div class="product-filter">
+                <div class="row mt-4">
+                    @foreach ($products as $product)
+                        <div class="col-md-3 product" data-aos="zoom-in" data-product="{{ $product->category_id }}">
+                            <img src="/images/products/1.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>{{ $product->name }}</strong></h5>
+                                <p>Rp {{ number_format($product->price) }}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </section>
 

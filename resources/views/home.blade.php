@@ -47,7 +47,8 @@
 
     {{-- Latest Products Section --}}
     <section class="products-section">
-        <div class="container">
+        {{-- Large view --}}
+        <div class="container d-none d-md-block d-lg-block">
             <div class="div" data-aos="fade-up">
                 <h2 class="text-center"><strong>Latest Products</strong></h2>
                 <div class="stripe mb-2">
@@ -125,12 +126,96 @@
 
             </div>
         </div>
+
+        {{-- Mobile View --}}
+        <div class="container d-sm-block d-md-none">
+            <div class="div">
+                <h2 class="text-center"><strong>Latest Products</strong></h2>
+                <div class="stripe mb-2">
+                    <div class="div"></div>
+                </div>
+                <p class="text-center text-dark mt-1" style="font-weight: 500;">Our newest and latest up to date
+                    products
+                </p>
+                {{-- Row --}}
+                <div class="row">
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/1.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/2.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/3.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/4.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/5.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/6.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/7.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+                    {{-- Product --}}
+                    <div class="col-6" data-aos="zoom-in">
+                        <img src="/images/products/8.png" alt="" srcset="">
+                        <div class="text-container ms-1">
+                            <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                            <p>Rp 815.000,00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
     </section>
     {{-- End of Latest Products Section --}}
 
     {{-- Product Showcase Section --}}
     <section class="product-showcase my-section">
-        <div class="container">
+        {{-- Windows View --}}
+        <div class="container d-none d-md-block d-lg-block">
             <div class="row">
                 <div class="col-md-4 align-self-center" data-aos="fade-up">
                     <img src="/images/products/showcase.png" alt="HikVision CCTV">
@@ -178,11 +263,14 @@
                 </div>
             </div>
         </div>
+
+        {{-- Mobile View --}}
+
     </section>
     {{-- End of Product Showcase Section --}}
 
     {{-- Services Section --}}
-    <section class="services-section my-section">
+    <section class="services-section my-section" style="box-sizing: content-box !important;">
         <div class="container">
             <div data-aos="fade-up">
                 <h2 class="text-center"><strong>Services</strong></h2>
@@ -204,7 +292,7 @@
                 <div class="col-md-6">
                     <div class="services" data-aos="zoom-in">
                         <div class="icon">
-                            <i class="bi bi-pc-display"></i>
+                            <i class="fa-solid fa-computer"></i>
                         </div>
                         <h2>Computer Services</h2>
                     </div>

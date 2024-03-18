@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 
@@ -16,6 +17,7 @@ class ProductController extends Controller
         return view('products', [
             'title' => 'Products',
             'products' => Product::all(),
+            'categories' => Category::all(),
             'currentPage' => 'products'
         ]);
     }

@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
             'wholesale_price' => 1000000,
             'list_price' => 1750000,
             'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quisquam laborum. Labore cum doloremque iste, consectetur temporibus eos officiis, minus perferendis placeat rem quae distinctio, quia alias neque. Nostrum, reiciendis.',
-            'category_id' => 1,
+            'category_id' => 2,
         ]);
 
         Product::create([
@@ -47,11 +47,49 @@ class DatabaseSeeder extends Seeder
             'wholesale_price' => 500000,
             'list_price' => 1000000,
             'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quisquam laborum. Labore cum doloremque iste, consectetur temporibus eos officiis, minus perferendis placeat rem quae distinctio, quia alias neque. Nostrum, reiciendis.',
-            'category_id' => 1,
+            'category_id' => 2,
         ]);
 
         Category::create([
+            'name' => 'CCTV Indoor',
+            'slug' => 'cctv-indoor',
+            'image' => 'images/category/cctv-indoor.png',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        ]);
+        Category::create([
+            'name' => 'CCTV Outdoor',
+            'slug' => 'cctv-outdoor',
+            'image' => 'images/category/cctv-outdoor.png',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        ]);
+        Category::create([
             'name' => 'CCTV',
+            'slug' => 'cctv',
+            'image' => 'images/category/cctv-indoor.png',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        ]);
+        Category::create([
+            'name' => 'CCTV',
+            'slug' => 'cctv',
+            'image' => 'images/category/cctv-indoor.png',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        ]);
+        Category::create([
+            'name' => 'CCTV',
+            'slug' => 'cctv',
+            'image' => 'images/category/cctv-indoor.png',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        ]);
+        Category::create([
+            'name' => 'CCTV',
+            'slug' => 'cctv',
+            'image' => 'images/category/cctv-indoor.png',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        ]);
+        Category::create([
+            'name' => 'CCTV',
+            'slug' => 'cctv',
+            'image' => 'images/category/cctv-indoor.png',
             'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         ]);
     }   

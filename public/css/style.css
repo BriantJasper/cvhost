@@ -68,7 +68,7 @@ html {
 
 /* End of Webkits */
 .my-section {
-    margin: 6rem 0;
+    margin: 5rem 0;
 }
 
 /* Animation */
@@ -129,9 +129,17 @@ nav {
         51,
         51,
         0.95
-    ); /* Adjust the last value (0.8) to set the desired transparency */
+    ); /* Adjust the last value to set the desired transparency */
 }
 
+.bg-grey {
+    background-color: rgba(
+        51,
+        51,
+        51,
+        0.95
+    ); /* Adjust the last value to set the desired transparency */
+}
 /* Hero Section */
 
 .image-container {
@@ -229,6 +237,7 @@ nav {
     font-size: 2.5rem;
     color: #2d7dd2;
 }
+
 /* Product Showcase Section */
 
 /* Services Section */
@@ -254,8 +263,8 @@ nav {
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
     position: relative;
     left: -1.8rem;
@@ -309,6 +318,28 @@ nav {
     color: black;
 }
 /* End of FAQ Serction */
+
+/* Scroll to Top Button */
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    z-index: 99; /* Make sure it appears above other elements */
+    width: 50px;
+    height: 50px;
+    background-color: var(--red); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 50%; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Cursor style */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #c40404; /* Darken button color on hover */
+}
 
 /* Products Page */
 
@@ -408,9 +439,33 @@ nav {
 
 /* Products Lists */
 
+.buttons {
+    padding: 2em 0 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttons button:hover,
+.buttons .btn-clicked {
+    background-color: var(--red);
+    color: white;
+}
+
 .category-section {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 2rem;
+    padding: 2rem 3rem 3rem 3rem;
     border-radius: 15px;
 }
 
