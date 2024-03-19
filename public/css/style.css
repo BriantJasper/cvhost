@@ -241,8 +241,13 @@ nav {
 /* Product Showcase Section */
 
 /* Services Section */
+.services-section {
+    background: #e9ecef;
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
 
-.services {
+.services-section .services {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -252,12 +257,12 @@ nav {
     overflow: visible;
 }
 
-.services h2 {
+.services-section .services h2 {
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.services .icon {
+.services-section .services .icon {
     background-color: var(--red);
     display: flex;
     justify-content: center;
@@ -270,17 +275,55 @@ nav {
     left: -1.8rem;
 }
 
-.services .icon i {
+.services-section .services .icon i {
     font-size: 1.8rem;
 }
 
-.services-section {
+/* Mobile View */
+.services-section-mobile {
     background: #e9ecef;
-    padding: 3rem;
-    padding-bottom: 5rem;
+    /* padding: 3rem; */
+    padding: 3rem 0 3rem 0;
 }
 
+.services-section-mobile .services {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem 0;
+    margin: 1.5rem 1rem 0 1rem;
+    border-radius: 15px;
+    overflow: visible;
+}
+
+.services-section-mobile .services h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.services-section-mobile .services .icon {
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: -1.5rem;
+}
+
+.services-section-mobile .services .icon i {
+    font-size: 1.5rem;
+}
 /* End of Servies Section */
+
+/* Partners Section */
+.owl-carousel .partner img {
+    width: 20px;
+    height: 30px;
+}
 
 /* FAQ Section */
 

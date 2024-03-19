@@ -214,8 +214,7 @@
 
     {{-- Product Showcase Section --}}
     <section class="product-showcase my-section">
-        {{-- Windows View --}}
-        <div class="container d-none d-md-block d-lg-block">
+        <div class="container">
             <div class="row">
                 <div class="col-md-4 align-self-center" data-aos="fade-up">
                     <img src="/images/products/showcase.png" alt="HikVision CCTV">
@@ -263,14 +262,12 @@
                 </div>
             </div>
         </div>
-
-        {{-- Mobile View --}}
-
     </section>
     {{-- End of Product Showcase Section --}}
 
     {{-- Services Section --}}
-    <section class="services-section my-section" style="box-sizing: content-box !important;">
+    {{-- Windows View --}}
+    <section class="services-section my-section d-none d-md-block d-lg-block" style="box-sizing: content-box !important;">
         <div class="container">
             <div data-aos="fade-up">
                 <h2 class="text-center"><strong>Services</strong></h2>
@@ -327,12 +324,71 @@
             </div>
         </div>
     </section>
+    {{-- Mobile View --}}
+    <section class="services-section-mobile my-section d-sm-block d-md-none" style="box-sizing: content-box !important;">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h2 class="text-center"><strong>Services</strong></h2>
+                <div class="stripe mb-4">
+                    <div class="div"></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="services" data-aos="zoom-in">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h2>CCTV Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="services" data-aos="zoom-in">
+                        <div class="icon">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <h2>Computer Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="services" data-aos="zoom-in">
+                        <div class="icon">
+                            <i class="fa-regular fa-snowflake"></i>
+                        </div>
+                        <h2>Air Conditioner Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="services" data-aos="zoom-in">
+                        <div class="icon">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h2>Installation Services</h2>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="services" data-aos="zoom-in">
+                        <div class="icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h2>Repair Services</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- End of Services Section --}}
 
     {{-- Partners Section --}}
-    <div class="container text-center">
-
-        <section class="partners-section my-section">
+    {{-- Windows View --}}
+    <section class="partners-section my-section d-none d-md-block d-lg-block">
+        <div class="container text-center">
             <div class="section mt-5" data-aos="fade-up">
                 <h2><strong>Our Partners</strong></h2>
                 <div class="stripe mb-2">
@@ -361,8 +417,43 @@
                     <img src="https://i.ibb.co/MG7V23Y/solution-logo.png" alt="Solution Logo">
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    {{-- Mobile View --}}
+    <section class="partners-section my-section d-sm-block d-md-none">
+        <div class="container text-center">
+            <div class="section mt-5" data-aos="fade-up">
+                <h2><strong>Our Partners</strong></h2>
+                <div class="stripe mb-2">
+                    <div class="div"></div>
+                </div>
+                <p style="font-weight: 500">Bekerja sama dengan lebih dari 100+ partner</p>
+            </div>
+            <div class="row mt-5 mb-3" data-aos="fade-right" data-aos-duration="900">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="partner">
+                        <img src="https://i.ibb.co/yXB5yk3/hikvision-logo.png" alt="HikVision Logo">
+                    </div>
+                    <div class="partner">
+                        <img src="https://i.ibb.co/wzhDwW3/dahua-logo.png" alt="Dahua Logo">
+                    </div>
+                    <div class="partner">
+                        <img src="https://i.ibb.co/JRjC3qZ/ezviz-logo.png" alt="EzViz Logo">
+                    </div>
+                    <div class="partner">
+                        <img src="https://i.ibb.co/HgTD9Bn/asus-logo.png" alt="Asus Logo">
+                    </div>
+                    <div class="partner">
+                        <img src="https://i.ibb.co/TkpNVW7/epson-logo.png" alt="Epson Logo">
+                    </div>
+                    <div class="partner">
+                        <img src="https://i.ibb.co/MG7V23Y/solution-logo.png" alt="Solution Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- End Of Partners Section --}}
 
     {{-- FAQ Section --}}
