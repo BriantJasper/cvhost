@@ -2,14 +2,11 @@ AOS.init();
 
 // Owl Carousel
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
-
-$(".owl-carousel").owlCarousel({
-    margin: 10,
-    loop: true,
-    autoWidth: true,
-    items: 4,
+    $(".owl-carousel").owlCarousel({
+        margin: 10,
+        loop: false,
+        autoWidth: true,
+    });
 });
 
 // Scroll Navbar Change

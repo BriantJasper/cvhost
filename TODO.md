@@ -9,10 +9,11 @@ Project Description
 
 ### In Progress
 
-- [ ] Finish Home Page Mobile Design  
 
 ### Done ✓
 
+- [x] Product Page Mobile Design  
+- [x] Finish Home Page Mobile Design  
 - [x] Product Page Filter Animation  
 - [x] Products Category Carousel  
 

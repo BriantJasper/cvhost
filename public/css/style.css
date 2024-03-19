@@ -340,10 +340,6 @@ nav {
     font-weight: 500;
 }
 
-.faq-section .heading {
-    font-size: 2rem;
-}
-
 .faq-section .question {
     background-color: white;
     border-radius: 50px;
@@ -360,6 +356,40 @@ nav {
     display: inline;
     color: black;
 }
+
+/* Mobile View */
+
+.faq-section-mobile {
+    background-color: transparent;
+    background: color-mix(
+        in srgb,
+        var(--dominant-color, #0f1305) 10%,
+        transparent
+    );
+}
+
+.faq-section-mobile h4 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.faq-section-mobile .question {
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.faq-section-mobile .question i {
+    justify-content: end;
+}
+
+.faq-section-mobile .question h4 {
+    display: inline;
+    color: black;
+}
+
 /* End of FAQ Serction */
 
 /* Scroll to Top Button */
@@ -386,9 +416,10 @@ nav {
 
 /* Products Page */
 
-.products {
+.products-page {
     margin-top: 8rem;
 }
+/* Carousel */
 
 .carousel {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -396,7 +427,7 @@ nav {
 }
 
 .carousel img {
-    height: 60vh;
+    width: 100%;
 }
 
 .carousel-item,

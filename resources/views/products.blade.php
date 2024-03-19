@@ -1,7 +1,8 @@
 @extends('partials.main')
 
 @section('container')
-    <div class="container products">
+    <div class="container products-page">
+        {{-- Carousel --}}
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -38,10 +39,11 @@
             </button>
         </div>
 
+        {{-- End Of Carousel --}}
         {{-- Category Section --}}
         <section class="category-section my-5">
             <div class="row">
-                <div class="col-md-12 mb-3">
+                <div class="col-md-12 mb-1">
                     <h3 class="text-center" style="font-weight: 600;" style="display:inline-block;">Kategori </h3>
                     <a href="/products/categories" class="text-decoration-none w-100 d-flex justify-content-end">See More <i
                             class="bi bi-arrow-right"></i></a>
@@ -49,7 +51,7 @@
                 <div class="owl-carousel">
                     @foreach ($categories as $category)
                         <a href="{{ $category->slug }}">
-                            <div class="category">
+                            <div class="category p-1">
                                 <img src="{{ $category->image }}" style="width: 10rem">
                             </div>
                         </a>
@@ -60,9 +62,10 @@
         </section>
         {{-- End of Category Section --}}
 
-        {{-- Latest Products --}}
-        <section class="products-section mt-5">
-            <div class="container">
+        {{-- Latest Products Section --}}
+        <section class="products-section">
+            {{-- Large view --}}
+            <div class="container d-none d-md-block d-lg-block">
                 <div class="div" data-aos="fade-up">
                     <h2 class="text-center"><strong>Latest Products</strong></h2>
                     <div class="stripe mb-2">
@@ -141,8 +144,91 @@
 
                 </div>
             </div>
+
+            {{-- Mobile View --}}
+            <div class="container d-sm-block d-md-none">
+                <div class="div">
+                    <h2 class="text-center"><strong>Latest Products</strong></h2>
+                    <div class="stripe mb-2">
+                        <div class="div"></div>
+                    </div>
+                    <p class="text-center text-dark mt-1" style="font-weight: 500;">Our newest and latest up to date
+                        products
+                    </p>
+                    {{-- Row --}}
+                    <div class="row">
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/1.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/2.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/3.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/4.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/5.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/6.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/7.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+                        {{-- Product --}}
+                        <div class="col-6" data-aos="zoom-in">
+                            <img src="/images/products/8.png" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>Black Mini Camera</strong></h5>
+                                <p>Rp 815.000,00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
         </section>
-        {{-- End of Latest Products --}}
+        {{-- End of Latest Products Section --}}
 
         {{-- Products Lists --}}
 
@@ -153,7 +239,8 @@
                     <div class="div"></div>
                 </div>
 
-                <div class="category-filter">
+                {{-- Windows View --}}
+                <div class="category-filter d-none d-md-block d-lg-block">
                     <div class="buttons">
                         <button type="button" data-filter="*">All</button>
                         @foreach ($categories as $category)
@@ -162,11 +249,36 @@
                         @endforeach
                     </div>
                 </div>
+                {{-- Mobile View --}}
+                <div class="category-filter d-sm-block d-md-none">
+                    <div class="buttons">
+                        <div class="owl-carousel">
+                            <button type="button" data-filter="*">All</button>
+                            @foreach ($categories as $category)
+                                <button type="button"
+                                    data-filter=".category-{{ $category->id }}">{{ $category->name }}</button>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="product-filter grid">
-                <div class="row mt-4">
+                <div class="row mt-4 d-none d-md-block d-lg-block">
                     @foreach ($products as $product)
                         <div class="col-md-3 product grid-item category-{{ $product->category_id }}">
+                            <img src="{{ $product->image }}" alt="" srcset="">
+                            <div class="text-container ms-1">
+                                <h5 class="mt-2"><strong>{{ $product->name }}</strong></h5>
+                                <p>Rp {{ number_format($product->price) }}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="row mt-4 d-sm-block d-md-none">
+                    @foreach ($products as $product)
+                        <div class="col-6 product grid-item category-{{ $product->category_id }}">
                             <img src="{{ $product->image }}" alt="" srcset="">
                             <div class="text-container ms-1">
                                 <h5 class="mt-2"><strong>{{ $product->name }}</strong></h5>

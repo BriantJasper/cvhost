@@ -457,7 +457,8 @@
     {{-- End Of Partners Section --}}
 
     {{-- FAQ Section --}}
-    <section class="faq-section my-section">
+    {{-- Windows View --}}
+    <section class="faq-section my-section d-none d-md-block d-lg-block">
         <div class="container">
             <div class="row my-5 p-5">
                 <div class="header col-md-12 text-center" data-aos="fade-up">
@@ -515,6 +516,92 @@
 
                 {{-- Question 3 --}}
                 <div class="question col-md-12" data-aos="fade-up">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
+                            class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
+                            data-core="" href="#question3" aria-expanded="false">
+                            <h4>Apakah Anda menyediakan layanan instalasi juga?</h4>
+                            <div class="justify-content-end">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="question3" class="panel-collapse noScroll collapse" role="tabpanel"
+                        aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_0"
+                        style="">
+                        <div class="panel-body">
+                            <p class="mbr-fonts-style panel-text display-7">
+                                Tentu! Kami menyediakan layanan instalasi profesional untuk memastikan penggunaan produk
+                                kami dengan sempurna di lingkungan Anda. Dengan tim ahli kami, Anda dapat yakin setiap
+                                langkah dilakukan dengan sempurna. Hubungi kami sekarang untuk detail lebih lanjut!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {{-- Mobile View --}}
+    <section class="faq-section-mobile my-section d-sm-block d-md-none">
+        <div class="container">
+            <div class="row my-5 p-5">
+                <div class="header col-12 text-center" data-aos="fade-up">
+                    <h2><Strong>FAQ - Frequently Asked Questions</Strong></h2>
+                </div>
+                {{-- Question 1 --}}
+                <div class="question col-12 mt-5" data-aos="fade-up">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
+                            class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
+                            data-core="" href="#question1" aria-expanded="false">
+                            <h4>Apakah Anda menawarkan garansi pada layanan Anda?</h4>
+                            <div class="justify-content-end">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="question1" class="panel-collapse noScroll collapse" role="tabpanel"
+                        aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_0"
+                        style="">
+                        <div class="panel-body">
+                            <p class="mbr-fonts-style panel-text display-7">
+                                Tentu saja! Kami mendukung pekerjaan kami dengan garansi yang kokoh untuk memastikan
+                                ketenangan pikiran Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Question 2 --}}
+                <div class="question col-12" data-aos="fade-up">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
+                            class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
+                            data-core="" href="#question2" aria-expanded="false">
+                            <h4>Bisakah saya memesan layanan servis secara online?</h4>
+                            <div class="justify-content-end">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="question2" class="panel-collapse noScroll collapse" role="tabpanel"
+                        aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_0"
+                        style="">
+                        <div class="panel-body">
+                            <p class="mbr-fonts-style panel-text display-7">
+                                Tentu saja! Pesan layanan servis Anda secara online sekarang. Hemat waktu dan tenaga dengan
+                                proses pemesanan yang cepat dan mudah. Percayakan kebutuhan servis Anda kepada kami dan
+                                nikmati kenyamanan memesan secara online!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Question 3 --}}
+                <div class="question col-12" data-aos="fade-up">
                     <div class="card-header" role="tab" id="headingOne">
                         <a class="d-flex flex-row justify-content-between align-items-center text-dark" role="button"
                             class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse"
