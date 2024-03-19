@@ -6,10 +6,10 @@ Project Description
 
 ### Todo
 
-- [ ]   
 
 ### In Progress
 
+- [ ] Product Page Filter Animation  
 - [ ] Finish Home Page Mobile Design  
 
 ### Done ✓

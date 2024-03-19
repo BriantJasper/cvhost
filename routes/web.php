@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
@@ -18,12 +20,6 @@ Route::get('/', function () {
     return view('home', [
         'title' => 'Home',
         'currentPage' => 'home'
-    ]);
-});
-
-Route::get('/about', function () {
-    return view('about', [
-        'title' => 'About'
     ]);
 });
 

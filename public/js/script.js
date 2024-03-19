@@ -66,27 +66,16 @@ scrollToTopBtn.addEventListener("click", function () {
     document.documentElement.scrollTop = 0;
 });
 
-// Product Page Category Filter
-const btns = document.querySelectorAll(".buttons button");
-const products = document.querySelectorAll(".product-filter .product");
+// Product Page Category Filter Using Isotope
+var $grid = $(".grid").isotope({
+    itemSelector: ".grid-item",
+    layoutMode: "fitRows",
+});
 
-console.log(products[0]);
-
-for (let i = 1; i < btns.length; i++) {
-    btns[i].addEventListener("click", filterProducts);
-}
-
-function secActiveBtn(e) {
-    btns.forEach((btn) => {
-        btn.classList.remove("active");
+$(".category-filter button").on("click", function () {
+    var value = $(this).attr("data-filter");
+    console.log(value);
+    $grid.isotope({
+        filter: value,
     });
-    e.target.classList.add("active");
-}
-
-// function filterProducts(e) {
-//     setActiveBtn(e);
-
-//     products.forEach((product) => {
-//         const product = product.dataset;
-//     });
-// }
+});

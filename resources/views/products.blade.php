@@ -155,19 +155,19 @@
 
                 <div class="category-filter">
                     <div class="buttons">
-                        <button type="button" data-btn="all">All</button>
+                        <button type="button" data-filter="*">All</button>
                         @foreach ($categories as $category)
-                            <button type="button" data-btn="{{ $category->id }}">{{ $category->name }}</button>
+                            <button type="button"
+                                data-filter=".category-{{ $category->id }}">{{ $category->name }}</button>
                         @endforeach
-
                     </div>
                 </div>
             </div>
-            <div class="product-filter">
+            <div class="product-filter grid">
                 <div class="row mt-4">
                     @foreach ($products as $product)
-                        <div class="col-md-3 product" data-aos="zoom-in" data-product="{{ $product->category_id }}">
-                            <img src="/images/products/1.png" alt="" srcset="">
+                        <div class="col-md-3 product grid-item category-{{ $product->category_id }}">
+                            <img src="{{ $product->image }}" alt="" srcset="">
                             <div class="text-container ms-1">
                                 <h5 class="mt-2"><strong>{{ $product->name }}</strong></h5>
                                 <p>Rp {{ number_format($product->price) }}</p>

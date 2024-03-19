@@ -19,6 +19,7 @@ return new class extends Migration
             $table->bigInteger('list_price');
             $table->string('description');
             $table->foreignId('category_id');
+            $table->string('image');
             $table->timestamps();
         });
     }
