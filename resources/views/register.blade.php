@@ -17,32 +17,55 @@
         rel="stylesheet">
     {{-- External CSS --}}
     <link rel="stylesheet" href="/css/login.css">
+    {{-- Boostrap --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
     <div class="bg-image"></div>
-
     <div class="bg-text">
-        <div class="row">
+        <div class="wrapper">
             <div class="login-register">
                 <a href="/login">Login</a>
                 <a href="/register" class="active">Register</a>
             </div>
 
             <div>
-                <form action="post" class="form">
+                <form method="post" class="form" action="/register">
                     @csrf
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" class="@error('email') is-invalid @enderror" required>
+                        @error('email')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
+
+
                     <div class="input-group">
-                        <label for="username">Username</label>
-                        <input type="text" name="username">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="@error('name') is-invalid @enderror" required>
+                        @error('name')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
+
+
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" class="@error('password') is-invalid @enderror" required>
+                        @error('password')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
+
                     </div>
 
                     <button type="submit">Register</button>
@@ -56,7 +79,7 @@
                 </div>
                 <button class="google-btn" type="submit">
                     <div class="img"><img src="https://www.cdnlogo.com/logos/g/35/google-icon.svg"></div>
-                    <div class="text">Login With Google</div>
+                    <a href="{{ url('/auth/google') }}" class="text">Login With Google</a>
                 </button>
             </div>
         </div>

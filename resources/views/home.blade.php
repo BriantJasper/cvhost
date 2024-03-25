@@ -16,6 +16,11 @@
     </div>
     {{-- End of Hero --}}
 
+    <form action="/logout" method="post">
+        @csrf
+        <button class="btn btn-primary" type="submit">Logout</button>
+    </form>
+
     {{-- About Us Section --}}
     <section class="about-section my-section" id="about">
         <div class="container text-center">

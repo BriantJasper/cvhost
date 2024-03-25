@@ -71,7 +71,6 @@ var $grid = $(".grid").isotope({
 
 $(".category-filter button").on("click", function () {
     var value = $(this).attr("data-filter");
-    console.log(value);
     $grid.isotope({
         filter: value,
     });
